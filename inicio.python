@@ -1,0 +1,40 @@
+def soma(a,b,c):
+    print("Digite os valores que quer somar: ")
+    a = float(input("Digite o primeiro valor: "))
+    b = float(input("Digite o segundo valor: "))
+    c = a+b
+    print(f"O resultado da operação é: {c}")
+
+def subtracao(a,b,c):
+    print("Digite os valores que quer subtrair: ")
+    a = float(input("Digite o primeiro valor: "))
+    b = float(input("Digite o segundo valor: "))
+    c = a-b
+    print(f"O resultado da operação é: {c}")
+
+def multiplicacao(a,b,c):
+    print("Digite os valores que quer multiplicar: ")
+    a = float(input("Digite o primeiro valor: "))
+    b = float(input("Digite o segundo valor: "))
+    c = a*b
+    print(f"O resultado da operação é: {c}")
+
+def divisao(a,b,c):
+    print("Digite os valores que quer dividir: ")
+    a = float(input("Digite o primeiro valor: "))
+    b = float(input("Digite o segundo valor: "))
+    c = a/b
+    if(a or b == '0'):
+        print(f"Não se pode fazer esta divisão: {a}/{b}")
+    elif(a or b !=0):
+        print(f"O resultado da operação é: {c}")
+
+operacao = str(input("Digite o tipo da operação: \n"))
+if(operacao == "soma"):
+    soma(0,0,0)
+elif(operacao == "subtração"):
+    subtracao(0,0,0)
+elif(operacao == "multiplicação"):
+    multiplicacao(0,0,0)
+elif(operacao == "divisao"):
+    divisao(0,0,0)
